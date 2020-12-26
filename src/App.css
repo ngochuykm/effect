@@ -1,5 +1,9 @@
 .App {
   text-align: center;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 100vh;
 }
 
 .App-logo {
@@ -12,7 +16,10 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
+@font-face{
+  font-family: Ludicrous;
+  src: url(./font/Ludicrous.ttf);
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -35,4 +42,35 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+@media(min-width:576px){
+  .container{
+    max-width: 540px;
+  }
+}
+
+@media(min-width:768px){
+  .container{
+    max-width: 720px;
+  }
+}
+
+@media(min-width:992px){
+  .container{
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px){
+  .container{
+    max-width: 1140px;
+  }
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+.container{
+  margin: auto;
 }

@@ -1,5 +1,6 @@
 import React from 'react'
 import { connect } from 'react-redux'
+import Header from '../component/Header'
 
 class HeaderContainer extends React.Component{
     constructor(props){
@@ -7,13 +8,17 @@ class HeaderContainer extends React.Component{
     }
     render(){
         return(
-            <div></div>
+            <div>
+                <Header {...this.props}></Header>
+            </div>
         )
     }    
 }
 
 const mapStateToProps = (state) => {
-    return{}
+    return{
+        page: state.config.page
+    }
 }
 
 const mapDispatchToProps = (dispatch) => {

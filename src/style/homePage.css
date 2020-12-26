@@ -1,0 +1,10 @@
+.home-page{
+    padding-top: 50px;
+}
+.homepage-warp{
+    margin-top: 50px;
+    min-height: 300px;
+    background-color: #eaeaea;
+    border-radius: 10px;
+    box-shadow: 3px 3px #d9cfdc6b;
+}
